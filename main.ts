@@ -16,6 +16,14 @@ input.onGesture(Gesture.LogoUp, function () {
 input.onGesture(Gesture.LogoDown, function () {
     pins.analogWritePin(AnalogPin.P0, pwmDown)
 })
+// 1. 開始時にモーターのPWM値を設定する
+// 　・pmwUp（上昇）
+// 　・pwmDown（下降）
+// 　・pwmGo（前進）
+// 2. 開始カウントダウン
+// 3. モーター制御を正転とする
+// 4. 姿勢制御モーターをpmwUpで起動
+// 5. 前進モーターは停止状態とする
 let pwmDown = 0
 let pwmUp = 0
 pwmUp = 256
