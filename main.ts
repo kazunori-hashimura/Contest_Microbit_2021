@@ -1,20 +1,20 @@
 input.onGesture(Gesture.ScreenUp, function () {
-    pins.analogWritePin(AnalogPin.P0, pwmUp)
-    pins.analogWritePin(AnalogPin.P1, pwmUp)
-    pins.analogWritePin(AnalogPin.P2, pwmUp)
-    pins.analogWritePin(AnalogPin.P3, pwmUp)
+    pins.analogWritePin(AnalogPin.P5, pwmUp)
+    pins.analogWritePin(AnalogPin.P6, pwmUp)
+    pins.analogWritePin(AnalogPin.P7, pwmUp)
+    pins.analogWritePin(AnalogPin.P8, pwmUp)
 })
 input.onGesture(Gesture.TiltRight, function () {
-    pins.analogWritePin(AnalogPin.P1, pwmDown)
+    pins.analogWritePin(AnalogPin.P6, pwmDown)
 })
 input.onGesture(Gesture.TiltLeft, function () {
-    pins.analogWritePin(AnalogPin.P2, pwmDown)
+    pins.analogWritePin(AnalogPin.P7, pwmDown)
 })
 input.onGesture(Gesture.LogoUp, function () {
-    pins.analogWritePin(AnalogPin.P3, pwmDown)
+    pins.analogWritePin(AnalogPin.P8, pwmDown)
 })
 input.onGesture(Gesture.LogoDown, function () {
-    pins.analogWritePin(AnalogPin.P0, pwmDown)
+    pins.analogWritePin(AnalogPin.P5, pwmDown)
 })
 // 1. 開始時にモーターのPWM値を設定する
 // 　・pmwUp（上昇）
@@ -38,8 +38,8 @@ basic.pause(1000)
 basic.showIcon(IconNames.Heart)
 pins.digitalWritePin(DigitalPin.P15, 1)
 pins.digitalWritePin(DigitalPin.P16, 0)
-pins.analogWritePin(AnalogPin.P0, pwmUp)
-pins.analogWritePin(AnalogPin.P1, pwmUp)
-pins.analogWritePin(AnalogPin.P2, pwmUp)
-pins.analogWritePin(AnalogPin.P3, pwmUp)
-pins.analogWritePin(AnalogPin.P10, 0)
+pins.analogWritePin(AnalogPin.P5, pwmUp)
+pins.analogWritePin(AnalogPin.P6, pwmUp)
+pins.analogWritePin(AnalogPin.P7, pwmUp)
+pins.analogWritePin(AnalogPin.P8, pwmUp)
+pins.analogWritePin(AnalogPin.P11, 0)
